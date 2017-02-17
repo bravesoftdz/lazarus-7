@@ -1,0 +1,49 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
+  StdCtrls;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Image1: TImage;
+    procedure Button1Click(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  pole:array[1..5,1..2] of integer;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.Button1Click(Sender: TObject);
+var x,y,i:integer;
+begin
+  i:=0;
+  for x:=1 to 5 do begin
+        for y:=1 to 3 do begin
+            pole[x,y]:=i;
+            Image1.canvas.textout(10+30*x,10+30*y,inttostr(pole[x,y]));
+            i:=i+1;
+        end;
+    end;
+end;
+
+end.
+

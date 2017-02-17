@@ -1,0 +1,32 @@
+object Form1: TForm1
+  Left = 779
+  Height = 201
+  Top = 156
+  Width = 561
+  Caption = 'Form1'
+  ClientHeight = 201
+  ClientWidth = 561
+  Color = clGray
+  OnCreate = FormCreate
+  LCLVersion = '1.4.0.4'
+  object Label1: TLabel
+    Left = 8
+    Height = 43
+    Top = 74
+    Width = 90
+    Caption = 'Label1'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -32
+    Font.Name = 'Gill Sans Ultra Bold Condensed'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Timer1: TTimer
+    Interval = 500
+    OnTimer = Timer1Timer
+    left = 49
+    top = 19
+  end
+end

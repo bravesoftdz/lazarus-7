@@ -1,0 +1,70 @@
+object Form1: TForm1
+  Left = 753
+  Height = 696
+  Top = 0
+  Width = 600
+  Caption = 'Form1'
+  ClientHeight = 0
+  ClientWidth = 0
+  OnCreate = FormCreate
+  LCLVersion = '1.2.6.0'
+  object Image1: TImage
+    Left = 8
+    Height = 709
+    Top = 11
+    Width = 418
+    OnClick = Image1Click
+    OnMouseDown = Image1MouseDown
+  end
+  object Button1: TButton
+    Left = 440
+    Height = 25
+    Top = 11
+    Width = 75
+    Caption = 'book'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 448
+    Height = 15
+    Top = 168
+    Width = 34
+    Caption = 'Label1'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 448
+    Height = 15
+    Top = 200
+    Width = 34
+    Caption = 'Label2'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 440
+    Height = 25
+    Top = 48
+    Width = 75
+    Caption = 'clear all'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 440
+    Height = 25
+    Top = 136
+    Width = 75
+    Caption = 'find'
+    OnClick = Button3Click
+    TabOrder = 2
+  end
+  object Edit1: TEdit
+    Left = 444
+    Height = 23
+    Top = 91
+    Width = 80
+    TabOrder = 3
+    Text = 'Edit1'
+  end
+end

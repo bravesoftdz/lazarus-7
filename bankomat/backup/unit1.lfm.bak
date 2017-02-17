@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 716
+  Height = 364
+  Top = 127
+  Width = 641
+  Caption = 'Form1'
+  ClientHeight = 0
+  ClientWidth = 0
+  OnCreate = FormCreate
+  LCLVersion = '1.2.6.0'
+  object Label1: TLabel
+    Left = 296
+    Height = 25
+    Top = 8
+    Width = 97
+    Caption = 'BANKOmat'
+    Font.Color = clLime
+    Font.Height = 25
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 16
+    Height = 23
+    Top = 326
+    Width = 200
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Button1: TButton
+    Left = 224
+    Height = 25
+    Top = 326
+    Width = 75
+    Caption = 'vyber'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Image1: TImage
+    Left = 9
+    Height = 276
+    Top = 36
+    Width = 615
+  end
+  object Button2: TButton
+    Left = 549
+    Height = 25
+    Top = 326
+    Width = 75
+    Caption = 'reset'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+end

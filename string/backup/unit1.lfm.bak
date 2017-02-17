@@ -1,0 +1,69 @@
+object Form1: TForm1
+  Left = 1007
+  Height = 240
+  Top = 195
+  Width = 410
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 410
+  LCLVersion = '1.4.0.4'
+  object Button1: TButton
+    Left = 11
+    Height = 23
+    Top = 204
+    Width = 116
+    Caption = 'ukaz vetu'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 9
+    Width = 34
+    Caption = 'Label1'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 10
+    Height = 23
+    Top = 33
+    Width = 384
+    OnChange = Edit1Change
+    TabOrder = 1
+    Text = 'Edit1'
+  end
+  object Button2: TButton
+    Left = 144
+    Height = 25
+    Top = 204
+    Width = 75
+    Caption = 'kontroluj'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 69
+    Width = 34
+    Caption = 'Label2'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 15
+    Top = 120
+    Width = 34
+    Caption = 'Label3'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 15
+    Top = 144
+    Width = 34
+    Caption = 'Label4'
+    ParentColor = False
+  end
+end

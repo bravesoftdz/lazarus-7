@@ -1,0 +1,94 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
+  StdCtrls;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Image1: TImage;
+    Label1: TLabel;
+    procedure FormCreate(Sender: TObject);
+    procedure Image1MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  pole1:array[1..10] of integer;
+  pole2:array[1..10] of integer;
+  stav: boolean;
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.FormCreate(Sender: TObject);
+var i: integer;
+begin
+   stav:=true;
+
+   for i:=1 to 10 do
+    begin
+      pole1[i]:=random(101);
+      pole2[i]:=-1;
+
+      image1.canvas.textout(i*20,10,inttostr(pole1[i]));
+      if not pole2[i]=-1 then
+      begin
+
+          image1.canvas.textout(i*20,50,inttostr(pole2[i]));
+      end;
+
+    end;
+end;
+
+procedure TForm1.Image1MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+ var i,poziciaX: integer;
+ var riadok1:boolean;
+begin
+  //cele zle
+  if stav=true then
+   begin
+      for i:=1 to 10 do
+          if (y>10) and (y<30) then
+             riadok1:=true;
+
+
+    if (x>20*i) and (x<20*(i+1)) and riadok1=true then
+      label1.caption:=inttostr(pole1[i]);
+   end
+   else
+   begin
+       if (y>50) and (y<70) then
+          riadok1:=false;
+       if (x>20*i) and (x<20*(i+1)) and riadok1=false then
+          pole2[i]
+
+          image1.canvas.textout(i*20,10,inttostr(pole1[i]));
+       if not pole2[i]=-1 then
+          begin
+
+             image1.canvas.textout(i*20,50,inttostr(pole2[i]));
+          end;
+   end;
+
+
+
+end;
+
+end.
+
